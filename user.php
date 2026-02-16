@@ -1,5 +1,5 @@
-<?php
+<?php include("header.php"); ?>
 
-//User
+<!--Context-->
 
-?>
+<?php include("footer.php"); ?>

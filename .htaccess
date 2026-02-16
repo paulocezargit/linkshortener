@@ -1,0 +1,37 @@
+# Enable Apache URL rewrite engine
+RewriteEngine On
+
+# ================================
+# PART 1 - Allow access to PHP files without typing .php
+# ================================
+
+# If the requested URL is NOT a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# And if a .php file with that name exists
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+# Then internally rewrite to filename.php
+# Example:
+# /about  →  /about.php
+RewriteRule ^([^\.]+)/?$ $1.php [L]
+
+# ================================
+# PART 2 - Routing system
+# ================================
+
+# If the requested URL is NOT an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# And is NOT an existing directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the URL contains only numbers
+# Example: /123
+# It rewrites to: index.php?valor=123
+RewriteRule ^([0-9]+)$ index.php?valor=$1 [L,QSA]
+
+# If the URL contains letters, numbers, _ or -
+# Example: /dsad or /my-post
+# It rewrites to: index.php?pagina=dsad
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?pagina=$1 [L,QSA]
