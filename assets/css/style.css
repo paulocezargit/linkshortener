@@ -19,7 +19,7 @@ body {
 
 .boxlogin-container {
     box-sizing: border-box;
-    width: 400px;
+    width: 320px;
     padding: 50px 25px;
     background-color: #fff;
     transform: translate(-50%, -50%);
@@ -55,24 +55,56 @@ body {
 
 .boxlogin-label {
     box-sizing: border-box;
-    color: #999;
-    margin-left: 5px;
-    font-size: 15px;
+    color: #a7a7a7;
+    margin-left: 15px;
+    font-size: 14px;
+    top: 14px;
+    position: relative;
+    background-color: #fff;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
 }
 
 .boxlogin-input {
     margin-top: 5px;
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid #ccc;
-    padding: 12px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border: 1px solid #666699;
+    padding: 15px 20px;
+    border-radius: 30px;
     outline: none;
+    font-size: 15px;
+    color: #5a5aa2;
+    transition: color .5s, border .5s;
+    -webkit-transition: color .5s, border .5s;
+    -moz-transition: color .5s, border .5s;
+    -ms-transition: color .5s, border .5s;
+    -o-transition: color .5s, border .5s;
 }
+
+.boxlogin-group:focus-within .boxlogin-label {
+    color: #666699;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+.boxlogin-input:focus {
+    border-color: #39ac39;
+    transition: color .5s, border .5s;
+    -webkit-transition: color .5s, border .5s;
+    -moz-transition: color .5s, border .5s;
+    -ms-transition: color .5s, border .5s;
+    -o-transition: color .5s, border .5s;
+}
+
 
 .boxlogin-center {
     display: flex;
@@ -81,16 +113,31 @@ body {
 
 .boxlogin-submit {
     margin-top: 20px;
-    padding: 15px 50px;
+    padding: 15px 70px;
     background-color: #39ac39;
     color: #fff;
     border: none;
     font-size: 16px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+.boxlogin-submit:hover {
+    background-color: #45d045;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
 }
 
 .boxlogin-submit:hover {
