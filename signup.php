@@ -1,5 +1,8 @@
-<?php include("header.php"); ?>
+<?php 
 
-<!--Context-->
+include("header.php"); 
+include("assets/pages/signup.php");
+include("footer.php");
 
-<?php include("footer.php"); ?>
+?>
+
