@@ -8,6 +8,23 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.site-color-primary {
+    color: #809fff;
+}
+
+.site-color-secundary {
+    color: #ffb366;
+}
+
+.site-background-primary {
+    background-color: #809fff;
+}
+
+.site-background-secundary {
+    background-color: #ffb366;
+}
+
+
 .boxlogin {
     box-sizing: border-box;
     width: 100%;
@@ -142,4 +159,36 @@ body {
 
 .boxlogin-submit:hover {
     background-color: rgba(43, 135, 43)ac39;
+}
+
+
+
+.dashbord {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashbord-topinfo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashbord-topinfo-user {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashbord-item-button-quit {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashbord-group {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashbord-item {
+    width: 100%;
+    box-sizing: border-box;
 }
