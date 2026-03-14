@@ -32,6 +32,8 @@ if (!empty($last_value)) {
 
 <?php include("header.php"); ?>
 
-<!--Context-->
+
+<div class="hometext">Link Shortener</div>
+
 
 <?php include("footer.php"); ?>
